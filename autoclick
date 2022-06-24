@@ -39,7 +39,8 @@
         end
     })
     Window:AddBind({
-        text = 'Toggle',
+        text = 'Toggle AC',
+        key = "C",
         callback = function()
             Enabled = not Enabled
             local NewColor = Color3.new(0, 1, 0)
@@ -62,6 +63,13 @@
                 VirtualInputManager:SendMouseButtonEvent(X, Y, 0, false, game, 1)
                 wait(Library.flags.Interval)
             end
+        end
+    })
+    Window:AddBind({
+        text = 'Toggle UI',
+        key = "Z",
+        callback = function()
+            Library:Close()
         end
     })
     Window:AddSlider({
