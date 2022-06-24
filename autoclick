@@ -16,7 +16,7 @@
         end
     end
 
-    local Library = loadstring(game:HttpGetAsync('https://pastebin.com/raw/edJT9EGX'))()
+    local Library = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/OptioniaI/RM/main/ModifiedLib'))()
     local Window = Library:CreateWindow("AutoClicker")
     Enabled_1 = Window:AddColor({
         text = 'Status:',
@@ -61,10 +61,10 @@
     })
     Window:AddSlider({
         text = 'Interval',
-        min = 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
-        max = 1,
-        value = 0.0001,
-        float = 0.01
+        _G.Minimum = 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        _G.Maximum = 1,
+        _G.SetValue = 0.0001,
+        _G.FloatV = 0.01
     })
     Box_1 = Window:AddBox({
         text = "AutoClick Position:",
